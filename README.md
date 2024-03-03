@@ -2,9 +2,9 @@
 permalink: /about
 ---
 
-# Wreath Webring Template
+# The Fruit Loop
 
-Wreath is a template for building a [webrings](https://en.wikipedia.org/wiki/Webring) with Jekyll on GitHub Pages.
+The Fruit Loop is based on the [Wreath Webring Template](https://github.com/ralismark/wreath-webring-template), a template for building a [webrings](https://en.wikipedia.org/wiki/Webring) with Jekyll on GitHub Pages.
 
 ## Joining
 
@@ -39,10 +39,10 @@ To do so, include the following html snippet, replacing `YOUR_NAME` with the use
 <iframe
   style="
     width: 100%;
-    max-width: 30rem;
+    max-width: 25rem;
     display: block;
     margin: 0 auto;
-    height: 3rem;
+    height: 6rem;
     border: none;
   "
   src="{{ "/embed/YOUR_NAME" | absolute_url }}"
@@ -56,10 +56,10 @@ Here's an example of what it looks like (with an added border so you can see the
 <iframe
   style="
     width: 100%;
-    max-width: 30rem;
+    max-width: 25rem;
     display: block;
     margin: 0 auto;
-    height: 3rem;
+    height: 6rem;
     border: 1px solid grey;
   "
   src="{{ site.ring[0].url | absolute_url }}"
@@ -70,23 +70,3 @@ Here's an example of what it looks like (with an added border so you can see the
 Feel free to tweak the style attribute -- these are just defaults that work for most people.
 
 You can specify `<extra html>` to inject extra CSS to your widget to make it fit in better with your website.
-
-# For users of this template
-
-> you may wish to remove this section when you use this template
-
-To build the site locally, you can use `serve.sh`, which requires [Docker](https://docs.docker.com/engine/install/).
-It spins up a Docker container that serves the website on port 5000.
-
-After copying this template, you should change `title` in `_config.yml` to the actual name of your webring.
-You can also edit the widget by changing `_layouts/embed.html`.
-Since this uses Jekyll, you can also add additional pages to the ring's website by creating `.md` or `.html` files in the root folder.
-See [the Jekyll documentation](https://jekyllrb.com/docs/) for more information.
-
-## About the Wreath webring template
-
-This template is a cleaned up version of another webring I ran for a bit in late 2021 -- [sike lipu](https://github.com/ralismark/sike-lipu), a webring for fans of toki pona that were in the ma pona discord server.
-I ended up shutting it down in 2021 during a period in my life where I didn't have the time to maintain it.
-
-However, it still kinda lived on as something that inspired the [bucket webring](https://webring.bucketfish.me/about.html), and eventually this webring template.
-Turns out, it's actually quite a neat and simple implementation of a webring, that also happens to be completely JS-free!
