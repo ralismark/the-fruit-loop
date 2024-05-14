@@ -8,6 +8,10 @@ The Fruit Loop is based on the [Wreath Webring Template](https://github.com/rali
 
 ## Joining
 
+|⚠️ Warning!|
+|-|
+|This webring is invite-only and **not open to the public**. PRs to add people that have not been explicitly invited will be rejected.|
+
 To add a person to the webring, create a file in the `_ring` folder named `YOUR_NAME.html` -- this name won't be used anywhere except for in the URL of the navbar widget.
 Its content should be like this:
 
