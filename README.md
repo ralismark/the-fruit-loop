@@ -46,7 +46,7 @@ To do so, include the following html snippet, replacing `YOUR_NAME` with the use
     max-width: 25rem;
     display: block;
     margin: 0 auto;
-    height: 6rem;
+    height: 7rem;
     border: none;
   "
   src="{{ "/embed/YOUR_NAME" | absolute_url | replace_first: "http://", "https://" }}"
