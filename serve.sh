@@ -1,12 +1,18 @@
 #!/bin/sh
 
+
+
 if which nix-shell >/dev/null; then
+  echo "(using nix-shell)"
+
   builddir=$(mktemp -d)
   trap 'rm -rf "$builddir"' "EXIT"
 
   nix-shell -p 'ruby.withPackages (ps: with ps; [ github-pages webrick ])' --run \
     "jekyll serve -d $builddir --port 5000 --watch --force_polling --safe"
 elif which docker > /dev/null; then
+  echo "(using docker)"
+
   IMAGE=starefossen/github-pages:latest
   CONTAINER_NAME=wreath
 
@@ -22,4 +28,3 @@ else
   echo "You need either docker (recommended) or nix installed"
   exit 1
 fi
-

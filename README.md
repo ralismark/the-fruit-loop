@@ -6,11 +6,12 @@ permalink: /about
 
 The Fruit Loop is based on the [Wreath Webring Template](https://github.com/ralismark/wreath-webring-template), a template for building a [webrings](https://en.wikipedia.org/wiki/Webring) with Jekyll on GitHub Pages.
 
-## Joining
+## Admission Requirements
 
-|⚠️ Warning!|
-|-|
-|This webring is invite-only and **not open to the public**. PRs to add people that have not been explicitly invited will be rejected.|
+This webring is for people who know each other -- if you want to join, have someone in the webring vouch for you.
+We also use Discord to stay in contact, e.g. if there are issues, so you'll need an account there.
+
+## Joining
 
 To add a person to the webring, create a file in the `_ring` folder named `YOUR_NAME.html` -- this name won't be used anywhere except for in the URL of the navbar widget.
 Its content should be like this:
