@@ -1,7 +1,5 @@
 #!/bin/sh
 
-
-
 if which nix-shell >/dev/null; then
   echo "(using nix-shell)"
 
